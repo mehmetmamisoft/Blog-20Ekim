@@ -1,0 +1,32 @@
+<div class="card text-white bg-primary " style="max-width: 24rem;">
+  <div class="card-header">Kategori</div>
+  <div class="card-body">
+
+    <div *ngIf="categories.length == 0" class="d-flex justify-content-center">
+      <div class="spinner-border text-info" role="status">
+        <span class="sr-only">Yükleniyor...</span>
+      </div>
+    </div>
+
+
+    <h3 *ngFor="let item of categories" class="card-title">
+      <strong>
+        <!-- kategori/asp.net/2 -->
+        <a [routerLink]="['/kategori', item.name, item.id]" class="btn btn-primary">
+          <i class="fa fa-arrow-circle-right"></i>
+          {{item.name}}
+        </a>
+      </strong>
+
+    </h3>
+  </div>
+</div>
+
+<!-- <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Primary card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+    </p>
+  </div>
+</div> -->
