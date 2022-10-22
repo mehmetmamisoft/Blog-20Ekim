@@ -22,7 +22,8 @@ import { ArticlesComponent } from './articles/articles.component';
   ],
   exports:[
     CategoryMenuComponent,
-    PageTitleComponent
+    PageTitleComponent,
+    ArticlesComponent
 
   ]
 })
